@@ -1,0 +1,16 @@
+{
+  "name": "discord_chat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "minh",
+  "license": "MIT",
+  "scripts": {
+    "auth": "node-sass auth/auth.scss assets/css/auth.css --watch",
+    "scsstocss": "node-sass sass/main.scss assets/css/style.css --watch"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "json-server": "^0.16.3",
+    "node-sass": "^6.0.0"
+  }
+}

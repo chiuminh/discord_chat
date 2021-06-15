@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Discrod</title>
+    <link rel="stylesheet"
+        href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./../assets/css/auth.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="app">
+        <div class="logo-box">
+            <a href=""><i class="fab fa-discord"></i>DISCROD</a>
+        </div>
+
+        <div class="overlay-full">
+            <form class="form form-login py-2">
+                <div class="grid">
+                    <div class="login_account">
+                        <div class="heading">
+                            <h3>Chào mừng trở lại!</h3>
+                            <span class="d-block">Rất vui mừng khi được gặp lại
+                                bạn!</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Email hoặc Số điện
+                                thoại
+                                <small class="form-message"></small>
+                            </label>
+
+                            <input type="text" name="email"
+                                class="bg-input-dark form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Mật khẩu
+                                <small class="form-message"></small>
+                            </label>
+                            <input type="password" name="password"
+                                class="form-control bg-input-dark">
+                            <div class="form-text">
+                                <a class="change" href="#">Quên mật
+                                    khẩu</a>
+                            </div>
+                        </div>
+
+                        <div class="form-group bg-input-dark mb-2">
+                            <input class="form-control bg-submit text-white"
+                                type="submit" value="Đăng nhập">
+                        </div>
+                        <div class="form-text mb-4 need-account">
+                            <span>Cần một tài khoản</span>
+                            <span class="change" id="sign-up">Đăng
+                                ký</span>
+                        </div>
+                    </div>
+                    <div class="login_other">
+                        <a type="button" class="btn btn-block btn-google">
+                            <i class="fab fa-google-plus-square  me-2"></i>
+                            Tiếp tục bằng google</a>
+                        <a type="button"
+                            class="mt-4 btn btn-block btn-facebook">
+                            <i class="fab fa-facebook-square me-2"></i>
+                            Tiếp tục bằng facebook</a>
+                    </div>
+                </div>
+            </form>
+            <form class="form form-register">
+                <div class="grid">
+                    <div class="heading text-center mb-2">
+                        <h3>Tạo tài khoản</h3>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email
+                            <small class="form-message"></small>
+                        </label>
+                        <input name="email" type="text"
+                            class="bg-input-dark form-control">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Tên đăng nhập
+                            <small class="form-message"></small>
+                        </label>
+                        <input type="text" id="username" name="username"
+                            class="bg-input-dark form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Mật khẩu
+                            <small class="form-message"></small>
+                        </label>
+                        <input type="password" name="password"
+                            class="form-control bg-input-dark">
+                    </div>
+                    <div class="form-group">
+                        <label for="birthday">Ngày sinh
+                            <small class="form-message"></small>
+                        </label>
+                        <input type="date" name="birthday" id="birthday"
+                            class="form-control bg-input-dark">
+                    </div>
+                    <div class="form-group">
+                        <label>Giới tính
+                            <small class="form-message"></small>
+                        </label>
+                        <div class="form-inline">
+                            <label for="male">Nam
+                                <input type="radio" value="male" name="gender"
+                                    id="male">
+                            </label>
+                            <label for="female">Nữ
+                                <input type="radio" value="female" name="gender"
+                                    id="female">
+                            </label>
+                            <label for="other">Khác
+                                <input type="radio" value="other" name="gender"
+                                    id="other">
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group bg-input-dark mb-2 mt-4">
+                        <input class="form-control bg-submit text-white"
+                            type="submit" value="Đăng ký">
+                    </div>
+                    <div class="form-text mb-4 need-account">
+                        <span class="change" id="sign-in">Đã có tài
+                            khoản?</span>
+                    </div>
+                    <div class="form-text mb-4">
+                        <small>Khi nhấn nút đăng ký, nghĩa là bạn đã đồng ý với
+                        </small>
+                        <a class="change">Điều Khoản Dịch
+                            Vụ</a> <small> và
+                        </small>
+                        <a class="change">Chính Sách Bảo
+                            Mật</a>
+                        <small> của Discord </small>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./../js/auth/main.js"></script>
+    <script src="./../js/auth/validation.js"></script>
+    <script>
+        Validator({
+            form: '.form-login',
+            selectorClassInvalid: 'is-invalid',
+            formGroupSelector: '.form-group',
+            selectorMessage: '.form-message',
+            rules: [
+                Validator.isRequired('.form-login input[name="email"]', '- Ô này là bắt buộc'),
+                Validator.isEmail('.form-login input[name="email"]', ' - Tên đăng nhập hoặc mật khẩu không hợp lệ'),
+                Validator.isRequired('.form-login input[name="password"]', '- Ô này là bắt buộc'),
+            ]
+        })
+
+        Validator({
+            form: '.form-register',
+            selectorClassInvalid: 'is-invalid',
+            formGroupSelector: '.form-group',
+            selectorMessage: '.form-message',
+            rules: [
+                Validator.isRequired('.form-register input[name="email"]', '- Ô này là bắt buộc'),
+                Validator.isEmail('.form-register input[name="email"]', ' - Trường này phải là email.'),
+                Validator.isRequired('.form-register input[name="username"]', '- Ô này là bắt buộc'),
+                Validator.isRequired('.form-register input[name="password"]', '- Ô này là bắt buộc'),
+                Validator.minLength('.form-register input[name="password"]', 6, '- Vui lòng nhập tối thiểu 6 ký tự'),
+                Validator.isRequired('.form-register input[name="birthday"]', '- Ô này là bắt buộc'),
+                Validator.isRequired('.form-register input[name="gender"]', '- Ô này là bắt buộc'),
+            ]
+        })
+    </script>
+</body>
+
+</html>
