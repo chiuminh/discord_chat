@@ -1,0 +1,68 @@
+.border {
+  border: 1px solid $border-color !important;
+}
+.d-flex {
+  display: flex;
+}
+.justify {
+  &-center {
+    justify-content: center;
+  } 
+  &-between {
+    justify-content: space-between;
+  }
+}
+.align-items {
+  &-center {
+    align-items: center;
+  }
+}
+.text {
+  &-center {
+    text-align: center;
+  }
+  &-left {
+    text-align: start;
+  }
+}
+
+.text-link {
+  color: $text-link;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.fw {
+  &-300 {
+    font-weight: 300;
+  }
+  &-400 {
+    font-weight: 400;
+  }
+}
+.d-block {
+  display: block;
+}
+.w-100 {
+  width: 100%;
+}
+
+@for $size from 0 through 8 {
+  .mt-#{$size}{
+    margin-top: $size * 4px !important;
+  }
+  .me-#{$size}{
+    margin-right: $size * 4px !important;
+  }
+  .mb-#{$size}{
+    margin-bottom: $size * 4px !important;
+  }
+  .my-#{$size}{
+    margin-top: $size * 4px !important;
+    margin-bottom: $size * 4px !important;
+  }
+}
