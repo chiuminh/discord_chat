@@ -2,116 +2,117 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discord Awesome</title>
-  <link rel="stylesheet" href="./../assets/css/style.css">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Awesome</title>
+    <link rel="stylesheet" href="./../assets/css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
-  <div class="app">
-    <!-- Scroller -->
-    <section class="scroller">
-      <ul class="scroller-list">
-        <li class="scroller-item active">
-          <div class="box">
-            <img src="./../assets/images/discord.png" alt="">
-            <p class="scroller-item-name">Trang chủ</p>
-          </div>
-        </li>
-        <span class="seperate mb-2"><span></span></span>
-        <li class="scroller-item">
-          <div class="box">
-            <p class="scroller-item-name">Hello</p>
-            <span>H</span>
-          </div>
-        </li>
-        <li class="scroller-item active-group">
-          <div class="box">
-            <p class="scroller-item-name">Lofi Girl</p>
-            <img src="./../assets/images/boy.png" alt="">
-          </div>
-        </li>
+    <div class="app">
+        <!-- Scroller -->
+        <section class="scroller">
+            <ul class="scroller-list">
+                <li class="scroller-item active">
+                    <div class="box">
+                        <img src="./../assets/images/discord.png" alt="">
+                        <p class="scroller-item-name">Trang chủ</p>
+                    </div>
+                </li>
+                <span class="seperate mb-2"><span></span></span>
+                <li class="scroller-item">
+                    <div class="box">
+                        <p class="scroller-item-name">Hello</p>
+                        <span>H</span>
+                    </div>
+                </li>
+                <li class="scroller-item active-group">
+                    <div class="box">
+                        <p class="scroller-item-name">Lofi Girl</p>
+                        <img src="./../assets/images/boy.png" alt="">
+                    </div>
+                </li>
 
-        <li class="scroller-item">
-          <div class="box bg-green">
-            <p class="scroller-item-name">Thêm máy chủ</p>
-            <span><i class="fas fa-plus"></i></span>
-          </div>
-        </li>
-        <li class="scroller-item">
-          <div class="box bg-green">
-            <p class="scroller-item-name">Khám phá</p>
-            <span><i class="far fa-compass"></i></span>
-          </div>
-        </li>
+                <li class="scroller-item">
+                    <div class="box bg-green">
+                        <p class="scroller-item-name">Thêm máy chủ</p>
+                        <span><i class="fas fa-plus"></i></span>
+                    </div>
+                </li>
+                <li class="scroller-item">
+                    <div class="box bg-green">
+                        <p class="scroller-item-name">Khám phá</p>
+                        <span><i class="fas fa-compass"></i></span>
+                    </div>
+                </li>
 
-        <span class="seperate mb-2"><span></span></span>
-        <li class="scroller-item">
-          <div class="box bg-green">
-            <p class="scroller-item-name">Tải ứng dụng</p>
-            <span><i class="fas fa-arrow-down"></i></span>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <section class="modal">
-      <div class="modal-dialog">
-        <div class="modal-close-dialog">&times;</div>
-        <div class="modal-content">
-          <div class="modal-title text-center">
-            <h3 class="main">Tạo máy chủ</h3>
-            <div class="sub">
-              Máy chủ của bạn là nơi bạn giao lưu với bạn bè của mình.
-              Hãy tạo máy chủ của riêng bạn và bắt đầu trò chuyện.
-            </div>
+                <span class="seperate mb-2"><span></span></span>
+                <li class="scroller-item">
+                    <div class="box bg-green">
+                        <p class="scroller-item-name">Tải ứng dụng</p>
+                        <span><i class="fas fa-arrow-down"></i></span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!-- Modal -->
+        <section class="modal d-none">
+            <div class="modal-dialog">
+                <div class="modal-close-dialog">&times;</div>
+                <div class="modal-content">
+                    <div class="modal-title text-center">
+                        <h3 class="main">Tạo máy chủ</h3>
+                        <div class="sub">
+                            Máy chủ của bạn là nơi bạn giao lưu với bạn bè của mình.
+                            Hãy tạo máy chủ của riêng bạn và bắt đầu trò chuyện.
+                        </div>
 
-          </div>
-          <div class="modal-body">
-            <form class="form-create-server">
-              <div class="form-group d-flex align-items-center">
-                <label for="avatar-server">
-                  <div class="upload-avatar-img">
-                    <img src="../assets/images/photo-camera.svg" alt="">
-                  </div>
-                </label>
-                <input hidden type="file" name="" id="avatar-server">
-                <span>Ảnh đại diện</span>
-              </div>
-              <div class="form-group">
-                <label for="nameServer">Tên Máy Chủ</label>
-                <input class="form-control" type="text" placeholder="Ex: Lofi Girl">
-              </div>
-            </form>
-            <button class="btn btn-group-lg btn-light border modal-body-button">
-              <span class="img-box">
-                <img src="../assets/images/create.png" alt="">
-              </span>
-              <div class="text-box">
-                <span>Tạo mẫu riêng</span>
-              </div>
-              <span class="icon-box">
-                <i class="fas fa-chevron-right"></i>
-              </span>
-            </button>
-            <div class="option-header my-3">
-              <span>BẮT ĐẦU TỪ MẪU</span>
-            </div>
-            <button class="btn btn-group-lg btn-light border modal-body-button">
-              <span class="img-box">
-                <img src="../assets/images/discord.png" alt="">
-              </span>
-              <div class="text-box">
-                <span>Học tập</span>
-              </div>
-              <span class="icon-box">
-                <i class="fas fa-chevron-right"></i>
-              </span>
-            </button>
-            <!-- <button class="btn btn-group-lg btn-light border modal-body-button">
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-create-server">
+                            <div class="form-group flex-center">
+                                <label for="avatar-server">
+                                    <div class="upload-avatar-img">
+                                        <img src="../assets/images/photo-camera.svg" alt="">
+                                    </div>
+                                </label>
+                                <input hidden type="file" name="" id="avatar-server">
+                                <span>Ảnh đại diện</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="nameServer">Tên Máy Chủ</label>
+                                <input class="form-control" type="text" placeholder="Ex: Lofi Girl">
+                            </div>
+                        </form>
+                        <button class="btn btn-group-lg btn-light border modal-body-button">
+                            <span class="img-box">
+                                <img src="../assets/images/create.png" alt="">
+                            </span>
+                            <div class="text-box">
+                                <span>Tạo mẫu riêng</span>
+                            </div>
+                            <span class="icon-box">
+                                <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </button>
+                        <div class="option-header my-3">
+                            <span>BẮT ĐẦU TỪ MẪU</span>
+                        </div>
+                        <button class="btn btn-group-lg btn-light border modal-body-button">
+                            <span class="img-box">
+                                <img src="../assets/images/discord.png" alt="">
+                            </span>
+                            <div class="text-box">
+                                <span>Học tập</span>
+                            </div>
+                            <span class="icon-box">
+                                <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </button>
+                        <!-- <button class="btn btn-group-lg btn-light border modal-body-button">
               <span class="img-box">
                 <img src="../assets/images/boy.png" alt="">
               </span>
@@ -133,35 +134,541 @@
                 <i class="fas fa-chevron-right"></i>
               </span>
             </button> -->
-          </div>
-          <div class="my-4 text-center">
-            <small class="fw-300">
-              Bạn không chắc? Bạn có thể tạm thời
-              <span class="text-link">bỏ qua câu hỏi này</span>.
-            </small>
-            <!-- <small class="fw-300">
+                    </div>
+                    <div class="my-4 text-center">
+                        <small class="fw-300">
+                            Bạn không chắc? Bạn có thể tạm thời
+                            <span class="text-link">bỏ qua câu hỏi này</span>.
+                        </small>
+                        <!-- <small class="fw-300">
               Khi tạo máy chủ, nghĩa là bạn đã đồng ý với
               <span class="text-link">Nguyên Tắc Cộng Đồng</span> của Discord.
             </small> -->
-          </div>
-        </div>
-        <div class="modal-footer">
-          <!-- <h5 class="modal-footer-title text-center">Bạn đã nhận được lời mời rồi?</h5>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <h5 class="modal-footer-title text-center">Bạn đã nhận được lời mời rồi?</h5>
           <button class="btn btn-block-sm btn-secondary ">Tham gia máy chủ</button> -->
-          <div class="d-flex justify-between align-items-center">
-            <span class="cursor-pointer fw-300">Trở lại</span>
-            <button class="btn btn-primary">Tạo</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Main -->
-    <main>
+                    <div class="flex-between">
+                        <span class="cursor-pointer fw-300">Trở lại</span>
+                        <button class="btn btn-primary">Tạo</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Main -->
+        <main class="bg-dark-light d-flex">
+            <!-- Sidebar -->
+            <section class="sidebar hide-on-mobile hide-on-tablet" style="width: 240px">
+                <form class="search border-bottom p-2">
+                    <input type="text" name="" id="" class="w-100 form-control-sm bg-dark-input"
+                        placeholder="Tìm hoặc bắt đầu cuộc trò chuyện">
+                </form>
+                <h2 class="ps-4 py-4 m-0 text-2xl text-white">Khám phá</h2>
+                <div class="sidebar-content p-2">
+                    <!-- list top -->
+                    <ul class="sidebar-list">
+                        <li class="sidebar-item active">
+                            <button class="btn btn-group justify-start align-items-start">
+                                <i class="fas fa-child"></i>
+                                <span class="ps-3 title">Bạn bè</span>
+                            </button>
+                        </li>
 
+                        <li class="sidebar-item active">
+                            <button class="btn btn-primary btn-group justify-start align-items-start">
+                                <i class="fas fa-compass text-xl text-white"></i>
+                                <span class="ps-3 title text-white">Trang chủ</span>
+                            </button>
+                        </li>
+                        <li class="sidebar-item ">
+                            <button class="btn btn-primary btn-group justify-start align-items-start">
+                                <i class="fas fa-gamepad text-xl text-white"></i>
+                                <span class="ps-3 title text-white">Gaming</span>
+                            </button>
+                        </li>
+                        <li class="sidebar-item">
+                            <button class="btn btn-group justify-start align-items-start">
+                                <i class="fab fa-gg-circle"></i>
+                                <span class="ps-3 title">Nitro</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- list friend -->
+                    <ul class="list-friend">
+                        <li class="sidebar-item">
+                            <div class="sidebar-text mt-4 mb-2 pe-2 flex-between">
+                                <span class="ps-3 title">TIN NHẮN TRỰC TIẾP</span>
+                                <span class="text-xl cursor-pointer">&#43;</span>
+                            </div>
+                        </li>
+                        <li class="sidebar-item">
+                            <button class="btn btn-group p-1 pe-2 justify-start align-items-start">
+                                <div class="avatar-small">
+                                    <img src="../assets/images/avatar-group-default.png" alt="">
+                                    <span class="dot dot-light"></span>
+                                </div>
+                                <span class="ps-3 text-start flex-1">minh</span>
+                                <span class="d-none text-xl">&times;</span>
+                            </button>
+                        </li>
+                        <li class="sidebar-item">
+                            <button class="btn btn-group p-1 pe-2 justify-start align-items-start">
+                                <div class="avatar-small">
+                                    <img src="../assets/images/boy.png" alt="">
+                                    <span class="dot"></span>
+                                </div>
+                                <span class="ps-3 text-start flex-1">minh</span>
+                                <span class="d-none text-xl">&times;</span>
+                            </button>
+                        </li>
+                        <li class="sidebar-item">
+                            <button class="btn btn-group p-1 pe-2 justify-start align-items-start">
+                                <div class="avatar-small">
+                                    <img src="../assets/images/boy.png" alt="">
+                                    <span class="dot"></span>
+                                </div>
+                                <span class="ps-3 text-start flex-1">minh</span>
+                                <span class="d-none text-xl">&times;</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-footer">
+                    <button class="btn btn-group p-3 justify-start align-items-start bg-dark-input">
+                        <div class="avatar-small">
+                            <img src="../assets/images/boy.png" alt="">
+                            <span class="dot dot-light"></span>
+                        </div>
+                        <div class="flex-column flex-1 text-xs">
+                            <span class="ps-3 text-start flex-1 text-light">minhcamchiu</span>
+                            <span class="ps-3 text-start flex-1 text-light">#5616</span>
+                        </div>
+                        <div class="icons text-light text-xs">
+                            <i class="fas fa-microphone-slash"></i>
+                            <i class="px-1 fas fa-headphones"></i>
+                            <i class="fas fa-cog"></i>
+                        </div>
+                    </button>
+                </div>
+            </section>
 
-    </main>
-  </div>
-  <script src="./../js/index.js"></script>
+            <!-- Container contact -->
+            <div class="flex-1 d-flex flex-column">
+                <!-- navigations -->
+                <div class="navigation">
+                    <nav class="flex-between border-bottom py-1 pe-4">
+                        <div class="nav-item flex-start">
+                            <div class=" btn text-color cursor-default ms-4">
+                                <i class="fas fa-child"></i>
+                                <span class="ps-1 title text-white">Bạn bè</span>
+                            </div>
+                            <div class="btn text-color active">
+                                <span class="title">Trực tuyến</span>
+                            </div>
+                            <div class="btn text-color">
+                                <span class="title">Tất cả</span>
+                            </div>
+                            <div class="btn text-color">
+                                <span class="title">Đang chờ xử lý</span>
+                            </div>
+                            <div class="btn text-color">
+                                <span class="title">Đã chặn</span>
+                            </div>
+                            <div class="btn-sm text-white py-0 px-1 btn-primary ms-3">
+                                <span class="title">Thêm bạn</span>
+                            </div>
+                        </div>
+                        <div class="nav-item flex-end">
+                            <div class="btn-sm text-color me-6">
+                                <i class="fas fa-comment-alt"></i>
+                            </div>
+                            <div class="btn-sm text-color ms-4">
+                                <i class="text-xl far fa-bell"></i>
+                            </div>
+                            <div class="btn-sm text-color">
+                                <i class="text-xl fas fa-question-circle"></i>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <!-- Content contact -->
+                <div class="flex-between align-items-start" id="contact-container">
+                    <!-- list friend or chat -->
+                    <div class="flex-1 nav-content px-4 py-4">
+                        <div class="title mb-2">
+                            <span class="text-color">Tất cả bạn bè - </span>
+                            <span class="text-color number">5</span>
+                        </div>
+                        <ul class="list-contact">
+                            <!-- friend items -->
+                            <li class="contact-item py-2 px-2 border-top border-secondary rounded-lg">
+                                <div class="flex-between">
+                                    <!-- avatar -->
+                                    <div class="avatar-small">
+                                        <img src="../assets/images/boy.png" alt="">
+                                        <span class="dot dot-light"></span>
+                                    </div>
+                                    <!-- content -->
+                                    <div class="flex-1 flex-column ps-3 justify-center">
+                                        <span class="fw-600 text-white">minh
+                                            <span class="user-id text-sm opacity-0">#5616</span>
+                                        </span>
+                                        <span class="text-xs text-color">Trực tuyến</span>
+                                    </div>
+                                    <!-- icons -->
+                                    <div class="flex-center icons text-light">
+                                        <div class="actionButton">
+                                            <!-- add event onclick -->
+                                            <i id="icon-item-friend" class="fas fa-comment-alt cursor-pointer me-2"></i>
+                                            <span class="info info-mes text-sm bg-dark px-2 py-1 rounded text-center">
+                                                Nhắn tin
+                                            </span>
+                                        </div>
+                                        <div class="actionButton">
+                                            <!-- add event onclick -->
+                                            <i id="icon-item-friend" class="fas fa-ellipsis-v  cursor-pointer"></i>
+                                            <!-- when onlick[fa-ellipsis]remove d-none -->
+                                            <ul class="list-action bg-dark p-2 d-none">
+                                                <li class="btn-sm hover-primary text-color text-sm">Bắt đầu cuộc gọi
+                                                    video</li>
+                                                <li class="btn-sm hover-primary text-color text-sm">Bắt đầu cuộc gọi
+                                                    thoại</li>
+                                                <li class="btn-sm text-đanger hover-danger">Xóa bạn </li>
+                                            </ul>
+                                            <span
+                                                class="info info-up text-sm bg-dark px-2 py-1 rounded text-center ">Những
+                                                mục khác</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="contact-item py-2 px-2 border-top border-secondary rounded-lg">
+                                <div class="flex-between">
+                                    <!-- avatar -->
+                                    <div class="avatar-small">
+                                        <img src="../assets/images/boy.png" alt="">
+                                        <span class="dot dot-light"></span>
+                                    </div>
+                                    <!-- content -->
+                                    <div class="flex-1 flex-column ps-3 justify-center">
+                                        <span class="fw-600 text-white">minh
+                                            <span class="user-id text-sm opacity-0">#5616</span>
+                                        </span>
+                                        <span class="text-xs text-color">Trực tuyến</span>
+                                    </div>
+                                    <!-- icons -->
+                                    <div class="flex-center icons text-light">
+                                        <div class="actionButton">
+                                            <!-- add event onclick -->
+                                            <i id="icon-item-friend" class="fas fa-comment-alt cursor-pointer me-2"></i>
+                                            <span class="info info-mes text-sm bg-dark px-2 py-1 rounded text-center">
+                                                Nhắn tin
+                                            </span>
+                                        </div>
+                                        <div class="actionButton">
+                                            <!-- add event onclick -->
+                                            <i id="icon-item-friend" class="fas fa-ellipsis-v  cursor-pointer"></i>
+                                            <!-- when onlick[fa-ellipsis]remove d-none -->
+                                            <ul class="list-action bg-dark p-2 d-none">
+                                                <li class="btn-sm hover-primary text-color text-sm">Bắt đầu cuộc gọi
+                                                    video</li>
+                                                <li class="btn-sm hover-primary text-color text-sm">Bắt đầu cuộc gọi
+                                                    thoại</li>
+                                                <li class="btn-sm text-đanger hover-danger">Xóa bạn </li>
+                                            </ul>
+                                            <span
+                                                class="info info-up text-sm bg-dark px-2 py-1 rounded text-center ">Những
+                                                mục khác</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- contact left -->
+                    <div class="action-contact-left py-4" style="width: 340px;">
+                        <h6 class="text-xl text-white fw-800 mt-2 mb-8">Đang Hoạt Động</h6>
+                        <div class="list-action px-6">
+                            <span class="d-block text-base text-white text-center">Hiện tại không có cập nhập nào mới
+                                cả..</span>
+                            <p class="desc text-color fw-300 text-center text-xs">Nếu bạn bè của bạn có hoạt động mới,
+                                ví dụ như
+                                chơi
+                                game hoặc trò chuyện thoại, chúng tôi sẽ hiển thị hoạt động đó ở đây</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Container search -->
+            <div class="flex-1 grid cols-3 mt-8 pe-8 ms-8 gap-3 d-none" style="overflow: auto;">
+                <!-- banner search -->
+                <div class="col-3" style="max-height: 300px;">
+                    <div class="search rounded-lg" style="max-height: 300px;">
+                        <img src="./../assets/images/bg-img.svg" style="width: 100%;" alt="">
+                        <div class="content text-center text-white">
+                            <h4 class="heading text-2xl fw-600 my-2">Tìm những cộng đồng dành cho bạn trên Discord</h4>
+                            <span class="sub-heading text-sm fw-400">Từ game cho đến âm nhạc và giáo dục, sẽ luôn có một
+                                nơi phù hợp
+                                với bạn trên Discord</span>
+                            <button class="search-group-form btn btn-block p-0 my-2 w-100-mobile">
+                                <input type="text" class="form-control w-100 " placeholder="Khám phá các cộng đồng">
+                                <span class="btn search-icon"><i class="fas fa-search"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mt-4">
+                    <h6 class="text-xl text-white fw-500">Cộng đồng nổi bật</h6>
+                </div>
+                <!-- card -->
+                <div class="col-1">
+                    <div class="card rounded-lg bg-dark">
+                        <div class="card-img rounded-top">
+                            <img src="../assets/images/card-img-game.jpg" alt="">
+                            <div class="avatar-small">
+                                <img src="../assets/images/boy.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body px-3 mt-6 d-flex flex-column justify-between">
+                            <span class="name text-white text-base fw-500">
+                                <i class="text-primary fas fa-fire-alt pe-2"></i>
+                                Genshin Impact Official
+                            </span>
+                            <div class="description flex-1 text-xs text-color mt-2">Welcome to Teyvat, Traveler! This is
+                                the place to
+                                discuss
+                                with others about your favorite game: Genshin Impact!</div>
+                            <div class="flex-start text-xs text-color">
+                                <div class="isActive">
+                                    <span>
+                                        <span class="dot dot-light"></span>
+                                        280.781 trực tuyên</span>
+                                </div>
+                                <div class="member ps-3">
+                                    <span>
+                                        <span class="dot"></span>
+                                        700.000 thành viên
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="card rounded-lg bg-dark">
+                        <div class="card-img rounded-top">
+                            <img src="../assets/images/card-img-game.jpg" alt="">
+                            <div class="avatar-small">
+                                <img src="../assets/images/boy.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body px-3 mt-6 d-flex flex-column justify-between">
+                            <span class="name text-white text-base fw-500">
+                                <i class="text-primary fas fa-fire-alt pe-2"></i>
+                                Genshin Impact Official
+                            </span>
+                            <div class="description flex-1 text-xs text-color mt-2">Welcome to Teyvat, Traveler! This is
+                                the place to
+                                discuss
+                                with others about your favorite game: Genshin Impact!</div>
+                            <div class="flex-start text-xs text-color">
+                                <div class="isActive">
+                                    <span>
+                                        <span class="dot dot-light"></span>
+                                        280.781 trực tuyên</span>
+                                </div>
+                                <div class="member ps-3">
+                                    <span>
+                                        <span class="dot"></span>
+                                        700.000 thành viên
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="card rounded-lg bg-dark">
+                        <div class="card-img rounded-top">
+                            <img src="../assets/images/card-img-game.jpg" alt="">
+                            <div class="avatar-small">
+                                <img src="../assets/images/boy.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body px-3 mt-6 d-flex flex-column justify-between">
+                            <span class="name text-white text-base fw-500">
+                                <i class="text-primary fas fa-fire-alt pe-2"></i>
+                                Genshin Impact Official
+                            </span>
+                            <div class="description flex-1 text-xs text-color mt-2">Welcome to Teyvat, Traveler! This is
+                                the place to
+                                discuss
+                                with others about your favorite game: Genshin Impact!</div>
+                            <div class="flex-start text-xs text-color">
+                                <div class="isActive">
+                                    <span>
+                                        <span class="dot dot-light"></span>
+                                        280.781 trực tuyên</span>
+                                </div>
+                                <div class="member ps-3">
+                                    <span>
+                                        <span class="dot"></span>
+                                        700.000 thành viên
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="card rounded-lg bg-dark">
+                        <div class="card-img rounded-top">
+                            <img src="../assets/images/card-img-game.jpg" alt="">
+                            <div class="avatar-small">
+                                <img src="../assets/images/boy.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body px-3 mt-6 d-flex flex-column justify-between">
+                            <span class="name text-white text-base fw-500">
+                                <i class="text-primary fas fa-fire-alt pe-2"></i>
+                                Genshin Impact Official
+                            </span>
+                            <div class="description flex-1 text-xs text-color mt-2">Welcome to Teyvat, Traveler! This is
+                                the place to
+                                discuss
+                                with others about your favorite game: Genshin Impact!</div>
+                            <div class="flex-start text-xs text-color">
+                                <div class="isActive">
+                                    <span>
+                                        <span class="dot dot-light"></span>
+                                        280.781 trực tuyên</span>
+                                </div>
+                                <div class="member ps-3">
+                                    <span>
+                                        <span class="dot"></span>
+                                        700.000 thành viên
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="card rounded-lg bg-dark">
+                        <div class="card-img rounded-top">
+                            <img src="../assets/images/card-img-game.jpg" alt="">
+                            <div class="avatar-small">
+                                <img src="../assets/images/boy.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body px-3 mt-6 d-flex flex-column justify-between">
+                            <span class="name text-white text-base fw-500">
+                                <i class="text-primary fas fa-fire-alt pe-2"></i>
+                                Genshin Impact Official
+                            </span>
+                            <div class="description flex-1 text-xs text-color mt-2">Welcome to Teyvat, Traveler! This is
+                                the place to
+                                discuss
+                                with others about your favorite game: Genshin Impact!</div>
+                            <div class="flex-start text-xs text-color">
+                                <div class="isActive">
+                                    <span>
+                                        <span class="dot dot-light"></span>
+                                        280.781 trực tuyên</span>
+                                </div>
+                                <div class="member ps-3">
+                                    <span>
+                                        <span class="dot"></span>
+                                        700.000 thành viên
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="card rounded-lg bg-dark">
+                        <div class="card-img rounded-top">
+                            <img src="../assets/images/card-img-game.jpg" alt="">
+                            <div class="avatar-small">
+                                <img src="../assets/images/boy.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body px-3 mt-6 d-flex flex-column justify-between">
+                            <span class="name text-white text-base fw-500">
+                                <i class="text-primary fas fa-fire-alt pe-2"></i>
+                                Genshin Impact Official
+                            </span>
+                            <div class="description flex-1 text-xs text-color mt-2">Welcome to Teyvat, Traveler! This is
+                                the place to
+                                discuss
+                                with others about your favorite game: Genshin Impact!</div>
+                            <div class="flex-start text-xs text-color">
+                                <div class="isActive">
+                                    <span>
+                                        <span class="dot dot-light"></span>
+                                        280.781 trực tuyên</span>
+                                </div>
+                                <div class="member ps-3">
+                                    <span>
+                                        <span class="dot"></span>
+                                        700.000 thành viên
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="card rounded-lg bg-dark">
+                        <div class="card-img rounded-top">
+                            <img src="../assets/images/card-img-game.jpg" alt="">
+                            <div class="avatar-small">
+                                <img src="../assets/images/boy.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body px-3 mt-6 d-flex flex-column justify-between">
+                            <span class="name text-white text-base fw-500">
+                                <i class="text-primary fas fa-fire-alt pe-2"></i>
+                                Genshin Impact Official
+                            </span>
+                            <div class="description flex-1 text-xs text-color mt-2">Welcome to Teyvat, Traveler! This is
+                                the place to
+                                discuss
+                                with others about your favorite game: Genshin Impact!</div>
+                            <div class="flex-start text-xs text-color">
+                                <div class="isActive">
+                                    <span>
+                                        <span class="dot dot-light"></span>
+                                        280.781 trực tuyên</span>
+                                </div>
+                                <div class="member ps-3">
+                                    <span>
+                                        <span class="dot"></span>
+                                        700.000 thành viên
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer -->
+                <div class="col-3">
+                    <div class="d-flex flex-column flex-center my-2">
+                        <i class="fas fa-compass text-3xl text-primary"></i>
+                        <h6 class="fw-500 text-white text-center text-base mt-3 mb-1">
+                            Có rất nhiều cộng đồng ở ngoài kia!
+                        </h6>
+                        <span class="text-link text-sm">Hãy thử tìm kiếm xem</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./../js/index.js"></script>
 </body>
 
 </html>
