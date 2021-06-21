@@ -1,0 +1,27 @@
+.grid {
+  width: 100%;
+  padding: 0;
+  display: grid;
+}
+
+// using grid-template-columns(class-before, name-class, from, to) 
+// ex:
+// grid-template-columns(0, cols, 3, 3) ==> cols-3;
+@include grid-template-columns(0, cols, 3, 3);
+// @include grid-template-columns(0, cols, 12, 12);
+
+// gap(, name-class, from, to) 
+// ex: 
+// gap(0, gap, 8, 8) ==> gap-9
+@include gap(0, gap, 2, 2);
+@include gap(0, gap, 3, 3);
+// @include column-gap(0, gap-x, 0, 8);
+// @include row-gap(0, gap-y, 0, 8);
+
+// grid-column(name-class, from, to) 
+// ex: 
+// grid-column(col, 8, 8) ==> col-8
+@include grid-column(col, 1, 4);
+
+// @include grid-column-start(col-start, 1, 13);
+// @include grid-column-end(col-end, 1 , 13);

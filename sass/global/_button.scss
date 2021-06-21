@@ -8,14 +8,24 @@
   cursor: pointer;
   border-radius: 4px;
   border: 0;
+
+  &-sm {
+    @extend .btn;
+    padding: 4px 8px;
+  }
+
   &-group {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
+    padding-top: 8px;
+    padding-bottom: 8px;
+    &-sm {
+      @extend .btn-group;
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
     &-lg {
       @extend .btn-group;
       padding-top: 14px;
@@ -42,20 +52,19 @@
     }
   }
   &-secondary {
-    $color: #6c757d;
-    background-color: $color;
+    background-color: $secondary-color;
     color: white;
     transition: all 0.3s;
     &:hover {
-      background-color: rgba($color: $color, $alpha: 0.8);
+      background-color: rgba($color: $secondary-color, $alpha: 0.8);
     }
   }
 
   &-primary {
     @extend .btn-secondary;
-    background-color: royalblue;
+    background-color: $primary-color;
     &:hover {
-      background-color: rgba($color: royalblue, $alpha: 0.8);
+      background-color: rgba($color: $primary-color, $alpha: 0.8);
     }
   }
 }

@@ -1,8 +1,75 @@
-.border {
-  border: 1px solid $border-color !important;
+// display
+.d-block {
+  display: block;
+}
+.d-grid {
+  display: grid;
 }
 .d-flex {
   display: flex;
+}
+.d-none {
+  display: none !important;
+}
+
+// size width and height
+.w {
+  &-25 {
+    width: 25%;
+  }
+  &-50 {
+    width: 50%;
+  }
+  &-75 {
+    width: 75%;
+  }
+  &-100 {
+    width: 100%;
+  }
+}
+.h{
+  &-25 {
+    height: 25%;
+  }
+  &-50 {
+    height: 50%;
+  }
+  &-75 {
+    height: 75%;
+  }
+  &-100 {
+    height: 100%;
+  }
+}
+// flex
+
+.flex {
+  &-1 {
+    flex: 1;
+  }
+  &-row {
+    display: flex;
+    flex-direction: row;
+  }
+  &-column {
+    display: flex;
+    flex-direction: column;
+  }
+  &-end {
+    @include flex(flex-end, center);
+  }
+  &-start {
+    @include flex(flex-start, center)
+  }
+  &-center {
+    @include flex(center, center);
+  }
+  &-around {
+    @include flex(space-around, center);
+  }
+  &-between {
+    @include flex(space-between, center);
+  }
 }
 .justify {
   &-center {
@@ -11,31 +78,129 @@
   &-between {
     justify-content: space-between;
   }
+  &-start {
+    justify-content: flex-start !important;
+  }
+  &-end {
+    justify-content: flex-end !important;
+  }
 }
 .align-items {
   &-center {
     align-items: center;
   }
-}
-.text {
-  &-center {
-    text-align: center;
+  &-start {
+    align-items: flex-start;
   }
-  &-left {
-    text-align: start;
+  &-end {
+    align-items: flex-end;
   }
 }
 
-.text-link {
-  color: $text-link;
-  &:hover {
-    cursor: pointer;
-    text-decoration: underline;
+// border
+.border {
+  border: 1px solid $border-color !important;
+  &-none {
+    border: 0 !important;
+  }
+  &-top {
+    border-top: 1px solid $border-color !important;
+  }
+  &-right {
+    border-right: 1px solid $border-color !important;
+  }
+  &-bottom {
+    border-bottom: 1px solid $border-color !important;
+  }
+  &-left {
+    border-left: 1px solid $border-color !important;
+  }
+
+  // border color
+  &-secondary {
+    border-color: rgba($color: #000000, $alpha: 0.2) !important;
   }
 }
-.cursor-pointer {
-  cursor: pointer;
+// rounded 
+.rounded {
+  border-radius: 4px;
+  &-lg {
+    border-radius: 8px;
+  }
+  &-circle {
+    border-radius: 50%;
+  }
 }
+// text-algin, text-color, font-size(text-xs, sm, ...)
+.text {
+  // text-algin
+  &-center {
+    text-align: center;
+  }
+  &-start {
+    text-align: start;
+  }
+  &-end {
+    text-align: end;
+  }
+  // font-size
+  &-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  &-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  &-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  &-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  &-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  &-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  &-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  // color 
+  &-color {
+    color: #adadad !important;
+  }
+  &-white {
+    color: $white-color !important;
+  }
+  &-light {
+    color: $light-color !important;
+  }
+  &-dark {
+    color: $dark-color !important;
+  }
+  &-primary {
+    color: $primary-color !important;
+  }
+  &-link {
+    color: $link-color !important;
+    &:hover {
+      cursor: pointer !important;
+      text-decoration: underline;
+    }
+  }
+  &-đanger {
+    color: $danger-color !important;
+  }
+}
+// font-weight
 .fw {
   &-300 {
     font-weight: 300;
@@ -43,15 +208,55 @@
   &-400 {
     font-weight: 400;
   }
+  &-500 {
+    font-weight: 500;
+  }
+  &-600 {
+    font-weight: 600;
+  }
 }
-.d-block {
-  display: block;
+// cursor
+.cursor {
+  &-pointer {
+    cursor: pointer !important;
+  }
+  &-context-menu {
+    cursor: context-menu !important;
+  }
+  &-default {
+    cursor: default !important;
+  }
 }
-.w-100 {
-  width: 100%;
+
+// background
+.bg {
+  &-primary {
+    background-color: $primary-color;
+  }
+
+  &-white {
+    background-color: $white-color;
+  }
+  &-dark-light {
+    background-color: $bg-dark-color;
+  }
+  &-dark {
+    background-color: $dark-color;
+
+    &-input {
+      background-color: $dark-light-color;
+    }
+  }
 }
 
 @for $size from 0 through 8 {
+  // margin
+  .m-#{$size}{
+    margin: $size * 4px !important;
+  }
+  .ms-#{$size}{
+    margin-left: $size * 4px !important;
+  }
   .mt-#{$size}{
     margin-top: $size * 4px !important;
   }
@@ -64,5 +269,96 @@
   .my-#{$size}{
     margin-top: $size * 4px !important;
     margin-bottom: $size * 4px !important;
+  }
+  .mx-#{$size}{
+    margin-right: $size * 4px !important;
+    margin-left: $size * 4px !important;
+  }
+
+  // padding
+  .p-#{$size}{
+    padding: $size * 4px !important;
+  }
+  .pt-#{$size}{
+    padding-top: $size * 4px !important;
+  }
+  .pe-#{$size}{
+    padding-right: $size * 4px !important;
+  }
+  .ps-#{$size}{
+    padding-left: $size * 4px !important;
+  }
+  .pb-#{$size}{
+    padding-bottom: $size * 4px !important;
+  }
+  .py-#{$size}{
+    padding-top: $size * 4px !important;
+    padding-bottom: $size * 4px !important;
+  }
+  .px-#{$size}{
+    padding-left: $size * 4px !important;
+    padding-right: $size * 4px !important;
+  }
+}
+
+.dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: $border-color;
+  &-light {
+    background: $primary-color;
+  }
+}
+
+.avatar-small {
+  width: 34px;
+  height: 34px;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  img {
+    width: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+  .dot {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+.icons {
+  i {
+    padding: 6px;
+    transition: all 0.4s;
+  }
+  i:hover {
+    background-color: rgba($color: #565758, $alpha: 1);
+  }
+}
+
+.opacity-0 {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
+}
+
+.hover {
+  &-primary {
+    &:hover {
+      background-color: rgba($color: $primary-color, $alpha: 0.8);
+      color: white !important;
+    }
+  }
+  &-danger {
+    &:hover {
+      background-color: rgba($color: $danger-color, $alpha: 0.8);
+      color: white !important;
+    }
   }
 }

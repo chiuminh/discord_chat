@@ -1,0 +1,44 @@
+.search {
+  position: relative;
+
+  .content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-group-form {
+    position: relative;
+
+    span.search-icon {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      font-size: 1.2rem;
+      color: $dark-light-color;
+
+      &:hover {
+          color: $primary-color;
+      }
+    }
+
+    input {
+      border: 2px solid $dark-light-color !important;
+      transition: 0.2s;
+
+      &:focus {
+        border: 2px solid rgb(9, 240, 228) !important;
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    .heading, .sub-heading {
+      display: none;
+    }
+    &-group-form {
+      width: 300px;
+    }
+  }
+}

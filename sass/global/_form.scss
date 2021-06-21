@@ -50,6 +50,14 @@
     color: #2d2e30;
     border: 1px solid #212327;
     transition: 0.4s;
+
+    &-sm {
+      @extend .form-control;
+      padding: 6px 10px;
+      font-size: 0.8rem;
+      line-height: 0.9rem;
+    }
+
     &:hover {
       border: 1px solid #000000;
     }

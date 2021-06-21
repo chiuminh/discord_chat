@@ -1,0 +1,127 @@
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+
+// ---------- [GRID LAYOUT] -----------
+// grid-template-columns
+@mixin grid-template-columns($class-before, $class, $from, $to) {
+  @if $class-before == 0 {
+    @for $numberCols from  $from through $to {
+      @if $from == 0 {
+        .#{$class}-none {
+          grid-template-columns: none;
+        }
+      }
+      .#{$class}-#{$numberCols} {
+        grid-template-columns: repeat($numberCols, minmax(0, 1fr));
+      }
+    } 
+  }@else {
+    @for $numberCols from  $from through $to {
+      @if $from == 0 {
+        .#{$class-before}.#{$class}-none {
+          grid-template-columns: none;
+        }
+      }
+      .#{$class-before}.#{$class}-#{$numberCols} {
+        grid-template-columns: repeat($numberCols, minmax(0, 1fr));
+      }
+    }
+  }
+}
+// gap
+@mixin gap($class-before, $class, $from, $to) {
+  @if $class-before == 0 {
+    @for $size from $from through $to {
+      .#{$class}-#{$size} {
+        gap: $size * 0.4rem;
+      }
+    }  
+  }@else {
+    @for $size from $from through $to {
+      .#{$class-before}.#{$class}-#{$size} {
+        gap: $size * 0.4rem;
+      }
+    }
+  }
+
+}
+// column-gap
+@mixin column-gap($class-before, $class, $from, $to) {
+  @if $class-before == 0 {
+    @for $size from $from through $to {
+      .#{$class}-#{$size} {
+        column-gap: $size * 0.4rem;
+      }
+    }  
+  }@else {
+    @for $size from $from through $to {
+      .#{$class-before}.#{$class}-#{$size} {
+        column-gap: $size * 0.4rem;
+      }
+    }
+  }
+
+}
+// row-gap
+@mixin row-gap($class-before, $class, $from, $to) {
+  @if $class-before == 0 {
+    @for $size from $from through $to {
+      .#{$class}-#{$size} {
+        row-gap: $size * 0.4rem;
+      }
+    }  
+  }@else {
+    @for $size from $from through $to {
+      .#{$class-before}.#{$class}-#{$size} {
+        row-gap: $size * 0.4rem;
+      }
+    }
+  }
+
+}
+// grid-column
+@mixin grid-column($class, $from, $to) {
+  .col-none {
+    display: none;
+  }
+
+  .col-auto {
+    grid-column: auto;
+  }
+
+  .#{$class}-full {
+    grid-column: 1 / -1;
+  }
+
+  @for $numberCol from $from through $to {
+    .#{$class}-#{$numberCol} {
+      grid-column: span $numberCol / span $numberCol;
+    }
+  }
+}
+// grid-column-end
+@mixin grid-column-end($class-end, $from, $to) {
+  .#{$class-end}-auto {
+    grid-column-end: auto;
+  }
+  @for $col from $from through $to {
+    .#{$class-end}-#{$col} {
+      grid-column-end: $col;
+    }
+  }
+}
+// grid-column-start
+@mixin grid-column-start($class-start, $from, $to) {
+  .#{$class-start}-auto {
+    grid-column-start: auto;
+  }
+  @for $col from $from through $to {
+    .#{$class-start}-#{$col} {
+      grid-column-start: $col;
+    }
+  }
+}
