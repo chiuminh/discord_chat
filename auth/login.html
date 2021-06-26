@@ -6,13 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Discrod</title>
-    <link rel="stylesheet"
-        href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="./../assets/css/auth.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -27,8 +24,12 @@
                     <div class="login_account">
                         <div class="heading">
                             <h3>Chào mừng trở lại!</h3>
-                            <span class="d-block">Rất vui mừng khi được gặp lại
-                                bạn!</span>
+                            <!-- <span class="d-block">Rất vui mừng khi được gặp lại
+                                bạn!</span> -->
+                        </div>
+                        <div class="alert alert-success d-none">
+                            <span>Chúc mừng bạn đã tạo tài khoản thành công</span>
+                            <span>&times;</span>
                         </div>
                         <div class="form-group">
                             <label for="">Email hoặc Số điện
@@ -36,15 +37,13 @@
                                 <small class="form-message"></small>
                             </label>
 
-                            <input type="text" name="email"
-                                class="bg-input-dark form-control">
+                            <input type="text" name="email" class="bg-input-dark form-control">
                         </div>
                         <div class="form-group">
                             <label for="">Mật khẩu
                                 <small class="form-message"></small>
                             </label>
-                            <input type="password" name="password"
-                                class="form-control bg-input-dark">
+                            <input type="password" name="password" class="form-control bg-input-dark">
                             <div class="form-text">
                                 <a class="change" href="#">Quên mật
                                     khẩu</a>
@@ -52,8 +51,7 @@
                         </div>
 
                         <div class="form-group bg-input-dark mb-2">
-                            <input class="form-control bg-submit text-white"
-                                type="submit" value="Đăng nhập">
+                            <input class="form-control bg-submit text-white" type="submit" value="Đăng nhập">
                         </div>
                         <div class="form-text mb-4 need-account">
                             <span>Cần một tài khoản</span>
@@ -65,46 +63,42 @@
                         <a type="button" class="btn btn-block btn-google">
                             <i class="fab fa-google-plus-square  me-2"></i>
                             Tiếp tục bằng google</a>
-                        <a type="button"
-                            class="mt-4 btn btn-block btn-facebook">
+                        <a type="button" class="mt-4 btn btn-block btn-facebook">
                             <i class="fab fa-facebook-square me-2"></i>
                             Tiếp tục bằng facebook</a>
                     </div>
                 </div>
             </form>
-            <form class="form form-register">
+            <form class="form form-register" id="register">
                 <div class="grid">
                     <div class="heading text-center mb-2">
                         <h3>Tạo tài khoản</h3>
                     </div>
+
                     <div class="form-group">
                         <label for="email">Email
                             <small class="form-message"></small>
                         </label>
-                        <input name="email" type="text"
-                            class="bg-input-dark form-control">
+                        <input name="email" type="text" class="bg-input-dark form-control">
 
                     </div>
                     <div class="form-group">
                         <label for="username">Tên đăng nhập
                             <small class="form-message"></small>
                         </label>
-                        <input type="text" id="username" name="username"
-                            class="bg-input-dark form-control">
+                        <input type="text" id="username" name="username" class="bg-input-dark form-control">
                     </div>
                     <div class="form-group">
                         <label for="password">Mật khẩu
                             <small class="form-message"></small>
                         </label>
-                        <input type="password" name="password"
-                            class="form-control bg-input-dark">
+                        <input type="password" name="password" class="form-control bg-input-dark">
                     </div>
                     <div class="form-group">
                         <label for="birthday">Ngày sinh
                             <small class="form-message"></small>
                         </label>
-                        <input type="date" name="birthday" id="birthday"
-                            class="form-control bg-input-dark">
+                        <input type="date" name="birthday" id="birthday" class="form-control bg-input-dark">
                     </div>
                     <div class="form-group">
                         <label>Giới tính
@@ -112,23 +106,19 @@
                         </label>
                         <div class="form-inline">
                             <label for="male">Nam
-                                <input type="radio" value="male" name="gender"
-                                    id="male">
+                                <input type="radio" value="male" name="gender" id="male">
                             </label>
                             <label for="female">Nữ
-                                <input type="radio" value="female" name="gender"
-                                    id="female">
+                                <input type="radio" value="female" name="gender" id="female">
                             </label>
                             <label for="other">Khác
-                                <input type="radio" value="other" name="gender"
-                                    id="other">
+                                <input type="radio" value="other" name="gender" id="other">
                             </label>
                         </div>
                     </div>
 
                     <div class="form-group bg-input-dark mb-2 mt-4">
-                        <input class="form-control bg-submit text-white"
-                            type="submit" value="Đăng ký">
+                        <input class="form-control bg-submit text-white" type="submit" value="Đăng ký">
                     </div>
                     <div class="form-text mb-4 need-account">
                         <span class="change" id="sign-in">Đã có tài
@@ -161,11 +151,23 @@
                 Validator.isRequired('.form-login input[name="email"]', '- Ô này là bắt buộc'),
                 Validator.isEmail('.form-login input[name="email"]', ' - Tên đăng nhập hoặc mật khẩu không hợp lệ'),
                 Validator.isRequired('.form-login input[name="password"]', '- Ô này là bắt buộc'),
-            ]
+            ],
+            onSubmit: async (data) => {
+                const rawResponse = await fetch('http://localhost:3000/user', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                const user = await rawResponse.json()
+                console.log(user)
+                console.log("data", data)
+            }
         })
 
         Validator({
-            form: '.form-register',
+            form: '#register',
             selectorClassInvalid: 'is-invalid',
             formGroupSelector: '.form-group',
             selectorMessage: '.form-message',
@@ -177,7 +179,18 @@
                 Validator.minLength('.form-register input[name="password"]', 6, '- Vui lòng nhập tối thiểu 6 ký tự'),
                 Validator.isRequired('.form-register input[name="birthday"]', '- Ô này là bắt buộc'),
                 Validator.isRequired('.form-register input[name="gender"]', '- Ô này là bắt buộc'),
-            ]
+            ],
+            onSubmit: async (data) => {
+                const response = await fetch('http://localhost:3000/users', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                const result = await response.json('')
+                return result
+            }
         })
     </script>
 </body>

@@ -1,0 +1,43 @@
+{
+  "users": [
+    {
+      "email": "minhch.vn@gmail.com",
+      "username": "minh",
+      "password": "123123",
+      "birthday": "2021-06-23",
+      "gender": "male",
+      "id": 1
+    },
+    {
+      "email": "minhch.vn@gmail.com",
+      "password": "123123",
+      "id": 2
+    },
+    {
+      "email": "minhch.vn@gmail.com",
+      "password": "123123",
+      "id": 3
+    },
+    {
+      "email": "minhch.vn@gmail.com",
+      "password": "123123",
+      "id": 4
+    },
+    {
+      "email": "minhch.vn@gmail.com",
+      "username": "minh",
+      "password": "123123",
+      "birthday": "2021-06-02",
+      "gender": "male",
+      "id": 5
+    },
+    {
+      "email": "minhch.vn@gmail.com",
+      "username": "minh",
+      "password": "123123",
+      "birthday": "2021-06-15",
+      "gender": "male",
+      "id": 6
+    }
+  ]
+}

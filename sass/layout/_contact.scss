@@ -67,3 +67,18 @@ nav {
     }
   }
 }
+
+.list-icon-contact {
+  span.active {
+    color: $light-color;
+  }
+  span:hover {
+    color:  $light-color;
+    cursor: pointer;
+  }
+}
+
+.action-contact-left {
+  width: 280px;
+  max-height: calc(100vh - 46px) !important;
+}
