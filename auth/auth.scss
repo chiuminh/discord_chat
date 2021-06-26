@@ -296,3 +296,15 @@ body {
   display: block;
 }
 
+.alert {
+  width: 100%;
+  padding: 8px 8px;
+  background-color: #459ef8;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}

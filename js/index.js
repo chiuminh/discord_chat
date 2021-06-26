@@ -12,6 +12,5 @@ $$('#icon-item-friend').forEach(element => {
   element.addEventListener('click', (event) => {
     // show list action
     removeClassNone(event.target.parentElement.querySelector('.list-action'))
-
   })
 });

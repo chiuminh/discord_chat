@@ -154,6 +154,8 @@
 
 .text-color {
   color: #adadad !important; }
+  .text-color-light {
+    color: #eaeaea !important; }
 
 .text-white {
   color: #fff !important; }
@@ -187,6 +189,12 @@
 
 .fw-600 {
   font-weight: 600; }
+
+.fw-700 {
+  font-weight: 700; }
+
+.fw-800 {
+  font-weight: 800; }
 
 .cursor-pointer {
   cursor: pointer !important; }
@@ -870,6 +878,17 @@ nav .active .title {
       height: 12px;
       transform: rotate(-45deg); }
 
+.list-icon-contact span.active {
+  color: #f0f0f0; }
+
+.list-icon-contact span:hover {
+  color: #f0f0f0;
+  cursor: pointer; }
+
+.action-contact-left {
+  width: 280px;
+  max-height: calc(100vh - 46px) !important; }
+
 .grid {
   width: 100%;
   padding: 0;
@@ -1208,3 +1227,13 @@ nav .active .title {
     display: none; }
   .w-100-mobile {
     width: 100% !important; } }
+
+.sidebar-group-chat {
+  width: 100%;
+  max-height: calc(100vh - 46px); }
+
+.chat-box {
+  width: 100%;
+  height: calc(100vh - 78px);
+  position: relative;
+  background-color: yellow; }

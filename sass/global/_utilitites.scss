@@ -176,6 +176,10 @@
   // color 
   &-color {
     color: #adadad !important;
+
+    &-light {
+      color: #eaeaea !important;
+    }
   }
   &-white {
     color: $white-color !important;
@@ -213,6 +217,12 @@
   }
   &-600 {
     font-weight: 600;
+  }
+  &-700 {
+    font-weight: 700;
+  }
+  &-800 {
+    font-weight: 800;
   }
 }
 // cursor
