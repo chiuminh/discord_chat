@@ -20,6 +20,28 @@ nav {
 
 .actionButton {
   position: relative;
+
+  .actionButton-icon {
+    display: inline-block;
+
+    &.bg-i {
+      i {
+        background: rgb(43, 30, 30);
+        &:hover {
+          color: $danger-color;
+        }
+      }
+    }
+    i {
+      border-radius: 50%;
+      padding: 6px 5px;
+
+      &:hover {
+        color: rgb(191, 175, 235);
+      }
+    }
+  }
+
   .info {
     position: absolute;
     top: -36px;
@@ -30,7 +52,7 @@ nav {
       left: -34px;
     }
     &-up {
-       width: 130px;
+      width: 130px;
     }
     &::after {
       z-index: 1;
@@ -60,7 +82,7 @@ nav {
       position: absolute;
       top: 8px;
       left: -6px;
-      background-color:rgb(48, 48, 48);
+      background-color: rgb(48, 48, 48);
       width: 12px;
       height: 12px;
       transform: rotate(-45deg);
@@ -73,7 +95,7 @@ nav {
     color: $light-color;
   }
   span:hover {
-    color:  $light-color;
+    color: $light-color;
     cursor: pointer;
   }
 }

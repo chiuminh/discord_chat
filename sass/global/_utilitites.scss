@@ -1,6 +1,6 @@
 // display
 .d-block {
-  display: block;
+  display: block !important;
 }
 .d-grid {
   display: grid;
@@ -27,7 +27,7 @@
     width: 100%;
   }
 }
-.h{
+.h {
   &-25 {
     height: 25%;
   }
@@ -59,7 +59,7 @@
     @include flex(flex-end, center);
   }
   &-start {
-    @include flex(flex-start, center)
+    @include flex(flex-start, center);
   }
   &-center {
     @include flex(center, center);
@@ -74,7 +74,7 @@
 .justify {
   &-center {
     justify-content: center;
-  } 
+  }
   &-between {
     justify-content: space-between;
   }
@@ -121,7 +121,7 @@
     border-color: rgba($color: #000000, $alpha: 0.2) !important;
   }
 }
-// rounded 
+// rounded
 .rounded {
   border-radius: 4px;
   &-lg {
@@ -173,7 +173,7 @@
     line-height: 2.25rem;
   }
 
-  // color 
+  // color
   &-color {
     color: #adadad !important;
 
@@ -257,55 +257,61 @@
       background-color: $dark-light-color;
     }
   }
+  &-danger {
+    background-color: rgba(
+      $color: $danger-color,
+      $alpha: 0.8
+    ) !important;
+  }
 }
 
 @for $size from 0 through 8 {
   // margin
-  .m-#{$size}{
+  .m-#{$size} {
     margin: $size * 4px !important;
   }
-  .ms-#{$size}{
+  .ms-#{$size} {
     margin-left: $size * 4px !important;
   }
-  .mt-#{$size}{
+  .mt-#{$size} {
     margin-top: $size * 4px !important;
   }
-  .me-#{$size}{
+  .me-#{$size} {
     margin-right: $size * 4px !important;
   }
-  .mb-#{$size}{
+  .mb-#{$size} {
     margin-bottom: $size * 4px !important;
   }
-  .my-#{$size}{
+  .my-#{$size} {
     margin-top: $size * 4px !important;
     margin-bottom: $size * 4px !important;
   }
-  .mx-#{$size}{
+  .mx-#{$size} {
     margin-right: $size * 4px !important;
     margin-left: $size * 4px !important;
   }
 
   // padding
-  .p-#{$size}{
+  .p-#{$size} {
     padding: $size * 4px !important;
   }
-  .pt-#{$size}{
+  .pt-#{$size} {
     padding-top: $size * 4px !important;
   }
-  .pe-#{$size}{
+  .pe-#{$size} {
     padding-right: $size * 4px !important;
   }
-  .ps-#{$size}{
+  .ps-#{$size} {
     padding-left: $size * 4px !important;
   }
-  .pb-#{$size}{
+  .pb-#{$size} {
     padding-bottom: $size * 4px !important;
   }
-  .py-#{$size}{
+  .py-#{$size} {
     padding-top: $size * 4px !important;
     padding-bottom: $size * 4px !important;
   }
-  .px-#{$size}{
+  .px-#{$size} {
     padding-left: $size * 4px !important;
     padding-right: $size * 4px !important;
   }
@@ -371,4 +377,28 @@
       color: white !important;
     }
   }
+}
+
+.disabled {
+  background-color: rgb(95, 100, 100) !important;
+  pointer-events: none;
+}
+
+@media (max-width: 1200px) {
+  .hide-on-sm-md-lg {
+    display: none !important;
+  }
+}
+@media (max-width: 930px) {
+  .hide-btn-1 {
+    display: none !important;
+  }
+}
+@media (max-width: 830px) {
+  .hide-btn-2 {
+    display: none !important;
+  }
+}
+.text-capitalize {
+  text-transform: capitalize !important;
 }

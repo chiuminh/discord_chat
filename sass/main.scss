@@ -12,3 +12,44 @@
 @import './layout/search';
 @import './global/card';
 @import './layout/chat';
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(202, 202, 202);
+  border-radius: 10px;
+  max-height: 50%;
+  height: 50%;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(136, 136, 136);
+}
+::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 6px;
+}
+::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 6px;
+}
+.invalid {
+  .form-message {
+    color: rgb(250, 104, 104);
+    font-size: 0.8rem;
+  }
+  .form-control,
+  .upload-avatar-img {
+    border-color: rgb(250, 104, 104);
+  }
+}

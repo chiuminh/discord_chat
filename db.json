@@ -2,42 +2,522 @@
   "users": [
     {
       "email": "minhch.vn@gmail.com",
-      "username": "minh",
+      "username": "minh chiu ",
       "password": "123123",
       "birthday": "2021-06-23",
       "gender": "male",
-      "id": 1
+      "id": 1,
+      "address": "Ngũ Hành Sơn, Đà Nẵng",
+      "avatar": "boy.png",
+      "isOnline": true
     },
     {
-      "email": "minhch.vn@gmail.com",
+      "email": "minh2ch.vn@gmail.com",
+      "username": "minh chiu 2",
       "password": "123123",
-      "id": 2
+      "birthday": "2021-06-23",
+      "gender": "male",
+      "id": 2,
+      "address": "Ngũ Hành Sơn, Đà Nẵng",
+      "avatar": "boy.png",
+      "isOnline": true
     },
     {
-      "email": "minhch.vn@gmail.com",
+      "email": "minh3ch.vn@gmail.com",
+      "username": "minh chiu 3",
       "password": "123123",
-      "id": 3
+      "birthday": "2021-06-23",
+      "gender": "male",
+      "id": 3,
+      "address": "Ngũ Hành Sơn, Đà Nẵng",
+      "avatar": "boy.png",
+      "isOnline": false
     },
     {
-      "email": "minhch.vn@gmail.com",
+      "email": "minh4ch.vn@gmail.com",
+      "username": "minh chiu 4",
       "password": "123123",
+      "birthday": "2021-06-23",
+      "gender": "male",
+      "id": 4,
+      "address": "Ngũ Hành Sơn, Đà Nẵng",
+      "avatar": "boy.png",
+      "isOnline": false
+    },
+    {
+      "email": "minh5ch.vn@gmail.com",
+      "username": "minh chiu 5",
+      "password": "123123",
+      "birthday": "2021-06-23",
+      "gender": "male",
+      "id": 5,
+      "address": "Ngũ Hành Sơn, Đà Nẵng",
+      "avatar": "boy.png",
+      "isOnline": false
+    },
+    {
+      "email": "minh6ch.vn@gmail.com",
+      "username": "minh chiu 6",
+      "password": "123123",
+      "birthday": "2021-06-23",
+      "gender": "male",
+      "id": 6,
+      "address": "Ngũ Hành Sơn, Đà Nẵng",
+      "avatar": "boy.png",
+      "isOnline": true
+    },
+    {
+      "email": "minh7ch.vn@gmail.com",
+      "username": "minh chiu 7",
+      "password": "123123",
+      "birthday": "2021-06-23",
+      "gender": "male",
+      "id": 7,
+      "address": "Ngũ Hành Sơn, Đà Nẵng",
+      "avatar": "boy.png",
+      "isOnline": false
+    },
+    {
+      "email": "minh8ch.vn@gmail.com",
+      "username": "minh chiu 8",
+      "password": "123123",
+      "birthday": "2021-06-23",
+      "gender": "male",
+      "id": 8,
+      "address": "Ngũ Hành Sơn, Đà Nẵng",
+      "avatar": "boy.png",
+      "isOnline": false
+    }
+  ],
+  "templates": [
+    {
+      "id": 1,
+      "idJoinServer": 1,
+      "option": "header",
+      "name": "Tạo mẫu riêng",
+      "image": "create.png",
+      "hide": false
+    },
+    {
+      "idJoinServer": 1,
+      "id": 2,
+      "name": "Học tập",
+      "image": "discord.png",
+      "hide": false
+    },
+    {
+      "idJoinServer": 1,
+      "id": 3,
+      "name": "Bạn bè",
+      "image": "boy.png",
+      "hide": false
+    },
+    {
+      "idJoinServer": 1,
+      "id": 4,
+      "name": "Gamming",
+      "image": "video-games.png",
+      "hide": false
+    },
+    {
+      "idJoinServer": 1,
+      "id": 5,
+      "name": "Nghệ sĩ và nguời sáng tạo",
+      "image": "discord.png",
+      "hide": false
+    },
+    {
+      "idJoinServer": 1,
+      "id": 6,
+      "name": "Câu lạc bộ",
+      "image": "boy.png",
+      "hide": false
+    },
+    {
+      "idJoinServer": 1,
+      "id": 7,
+      "name": "Cộng đồng địa phương",
+      "image": "video-games.png",
+      "hide": false
+    },
+    {
+      "id": 1,
+      "idJoinServer": 2,
+      "name": "Dành cho CLB hoặc cộng đồng",
+      "image": "create.png",
+      "hide": false
+    },
+    {
+      "id": 2,
+      "idJoinServer": 2,
+      "name": "Dành cho tôi và bạn bè",
+      "image": "discord.png",
+      "hide": false
+    },
+    {
+      "id": 3,
+      "idJoinServer": 2,
+      "option": "ignore",
+      "name": "",
+      "image": null,
+      "hide": true
+    },
+    {
+      "id": 4,
+      "idJoinServer": 3,
+      "option": "policy",
+      "name": "",
+      "image": null,
+      "hide": true
+    }
+  ],
+  "joinServers": [
+    {
+      "id": 1,
+      "title": "Tạo máy chủ",
+      "subTitle": "Máy chủ của bạn là nơi bạn giao lưu với bạn bè của mình.Hãy tạo  máy chủ của riêng bạn và bắt đầu trò chuyện.",
+      "hide": true,
+      "contentFooter": "Bạn đã nhận lời mời rồi?",
+      "next": true,
+      "back": false,
+      "create": true,
+      "admin": "minh chiu",
+      "currentPage": 1
+    },
+    {
+      "id": 2,
+      "title": "máy chủ của bạn",
+      "subTitle": "Để giúp bạn thiết lập, máy chủ mới của bạn chỉ dành cho một vài người bạn hay cho một cộng đồng lớp hơn?.",
+      "hide": true,
+      "contentFooter": null,
+      "text": "Bạn không chắc? Bạn có thể tạm thời",
+      "ignoreText": "bỏ qua câu hỏi này",
+      "next": true,
+      "back": false,
+      "create": false,
+      "currentPage": 2
+    },
+    {
+      "id": 3,
+      "title": "Tùy chỉnh máy chủ",
+      "subTitle": "Hãy cá nhân hóa máy chủ bằng cách đặt tên và thêm biểu tượng đại diện. Bạn có thể thay đổi bất cứ lúc nào.",
+      "hide": true,
+      "contentFooter": null,
+      "next": true,
+      "back": false,
+      "create": false,
+      "currentPage": 3,
+      "disabledBtnSubmit": false,
+      "nameGroup": "Máy chủ của"
+    }
+  ],
+  "servers": [
+    {
+      "id": 1,
+      "name": "Trang Chủ",
+      "avatar": "discord.png",
+      "separeate": true,
+      "status": true,
+      "myServer": true,
+      "hide": false,
+      "idTemplate": 1
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "name": "Hello",
+      "avatar": null,
+      "separeate": false,
+      "status": false,
+      "myServer": true,
+      "hide": false,
+      "idTemplate": 1
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "name": "Lofi Girl",
+      "avatar": "boy.png",
+      "separeate": false,
+      "status": false,
+      "myServer": false,
+      "hide": false,
+      "idTemplate": 2
+    },
+    {
+      "userId": 1,
+      "name": "ChatCord",
+      "avatar": "boy.png",
+      "separeate": false,
+      "status": false,
+      "myServer": true,
+      "hide": false,
+      "idTemplatesCreate": [
+        1,
+        1
+      ],
       "id": 4
     },
     {
-      "email": "minhch.vn@gmail.com",
-      "username": "minh",
-      "password": "123123",
-      "birthday": "2021-06-02",
-      "gender": "male",
+      "userId": 1,
+      "name": "The Boy",
+      "avatar": "boy.png",
+      "separeate": false,
+      "status": false,
+      "myServer": true,
+      "hide": false,
+      "idTemplatesCreate": [
+        1,
+        1
+      ],
       "id": 5
     },
     {
-      "email": "minhch.vn@gmail.com",
-      "username": "minh",
-      "password": "123123",
-      "birthday": "2021-06-15",
-      "gender": "male",
+      "userId": 1,
+      "name": "Máy chủ của",
+      "avatar": null,
+      "separeate": false,
+      "status": false,
+      "myServer": true,
+      "hide": false,
+      "idTemplatesCreate": [
+        1,
+        1
+      ],
       "id": 6
+    }
+  ],
+  "serverGroupsItems": [
+    {
+      "title": "Cerro Hawthorn",
+      "description": "Welcome to Teyvat, Traveler! This is the place to discuss with others about your favorite game: Genshin Impact! ",
+      "avatar": "discord.png",
+      "image": "card-img-game.jpg",
+      "member": 800000,
+      "memberOnline": 280000,
+      "id": 1,
+      "typeId": "123123"
+    },
+    {
+      "title": "Salmon Barberry",
+      "description": "Welcome to Teyvat, Traveler! This is the place to discuss with others about your favorite game: Genshin Impact! ",
+      "avatar": "discord.png",
+      "image": "card-img-game.jpg",
+      "member": 800000,
+      "memberOnline": 280000,
+      "id": 2,
+      "typeId": "123124"
+    },
+    {
+      "title": "Modoc Hawksbeard",
+      "description": "Welcome to Teyvat, Traveler! This is the place to discuss with others about your favorite game: Genshin Impact! ",
+      "avatar": "discord.png",
+      "image": "card-img-game.jpg",
+      "member": 800000,
+      "memberOnline": 280000,
+      "id": 3,
+      "typeId": "123125"
+    },
+    {
+      "title": "Yellow Necklacepod",
+      "description": "Welcome to Teyvat, Traveler! This is the place to discuss with others about your favorite game: Genshin Impact! ",
+      "avatar": "discord.png",
+      "image": "card-img-game.jpg",
+      "member": 800000,
+      "memberOnline": 280000,
+      "id": 4,
+      "typeId": "123126"
+    },
+    {
+      "title": "Asafetida",
+      "description": "Welcome to Teyvat, Traveler! This is the place to discuss with others about your favorite game: Genshin Impact! ",
+      "avatar": "discord.png",
+      "image": "card-img-game.jpg",
+      "member": 800000,
+      "memberOnline": 280000,
+      "id": 5,
+      "typeId": "123127"
+    },
+    {
+      "title": "Genshin Impact Official",
+      "description": "Welcome to Teyvat, Traveler! This is the place to discuss with others about your favorite game: Genshin Impact! ",
+      "avatar": "discord.png",
+      "image": "card-img-game.jpg",
+      "member": 800000,
+      "memberOnline": 280000,
+      "id": 1,
+      "typeId": "123123"
+    },
+    {
+      "title": "Genshin Impact Official",
+      "description": "Welcome to Teyvat, Traveler! This is the place to discuss with others about your favorite game: Genshin Impact! ",
+      "avatar": "discord.png",
+      "image": "card-img-game.jpg",
+      "member": 800000,
+      "memberOnline": 280000,
+      "id": 2,
+      "typeId": "123124"
+    },
+    {
+      "title": "Genshin Impact Official",
+      "description": "Welcome to Teyvat, Traveler! This is the place to discuss with others about your favorite game: Genshin Impact! ",
+      "avatar": "discord.png",
+      "image": "card-img-game.jpg",
+      "member": 800000,
+      "memberOnline": 280000,
+      "id": 2,
+      "typeId": "123124"
+    },
+    {
+      "title": "Genshin Impact Official",
+      "description": "Welcome to Teyvat, Traveler! This is the place to discuss with others about your favorite game: Genshin Impact! ",
+      "avatar": "discord.png",
+      "image": "card-img-game.jpg",
+      "member": 800000,
+      "memberOnline": 280000,
+      "id": 3,
+      "typeId": "123125"
+    },
+    {
+      "title": "Genshin Impact Official",
+      "description": "Welcome to Teyvat, Traveler! This is the place to discuss with others about your favorite game: Genshin Impact! ",
+      "avatar": "discord.png",
+      "image": "card-img-game.jpg",
+      "member": 800000,
+      "memberOnline": 280000,
+      "id": 4,
+      "typeId": "123126"
+    },
+    {
+      "title": "Genshin Impact Official",
+      "description": "Welcome to Teyvat, Traveler! This is the place to discuss with others about your favorite game: Genshin Impact! ",
+      "avatar": "discord.png",
+      "image": "card-img-game.jpg",
+      "member": 800000,
+      "memberOnline": 280000,
+      "id": 5,
+      "typeId": "123127"
+    },
+    {
+      "title": "Genshin Impact Official",
+      "description": "Welcome to Teyvat, Traveler! This is the place to discuss with others about your favorite game: Genshin Impact! ",
+      "avatar": "discord.png",
+      "image": "card-img-game.jpg",
+      "member": 800000,
+      "memberOnline": 280000,
+      "id": 5,
+      "typeId": "123127"
+    },
+    {
+      "title": "Genshin Impact Official",
+      "description": "Welcome to Teyvat, Traveler! This is the place to discuss with others about your favorite game: Genshin Impact! ",
+      "avatar": "discord.png",
+      "image": "card-img-game.jpg",
+      "member": 800000,
+      "memberOnline": 280000,
+      "id": 4,
+      "typeId": "123126"
+    },
+    {
+      "title": "Genshin Impact Official",
+      "description": "Welcome to Teyvat, Traveler! This is the place to discuss with others about your favorite game: Genshin Impact! ",
+      "avatar": "discord.png",
+      "image": "card-img-game.jpg",
+      "member": 800000,
+      "memberOnline": 280000,
+      "id": 5,
+      "typeId": "123127"
+    },
+    {
+      "title": "Lobed Phaeographis",
+      "description": "Welcome to Teyvat, Traveler! This is the place to discuss with others about your favorite game: Genshin Impact! ",
+      "avatar": "discord.png",
+      "image": "card-img-game.jpg",
+      "member": 800000,
+      "memberOnline": 280000,
+      "id": 5,
+      "typeId": "123127"
+    }
+  ],
+  "navContent": [
+    {
+      "id": "nav1",
+      "content": "bạn bè",
+      "type": "friend"
+    },
+    {
+      "id": "nav2",
+      "content": "trực tuyến",
+      "active": true,
+      "type": "online"
+    },
+    {
+      "id": "nav3",
+      "content": "tất cả",
+      "active": false,
+      "type": "all"
+    },
+    {
+      "id": "nav4",
+      "content": "Đang chờ xử lý",
+      "active": false,
+      "type": "pending"
+    },
+    {
+      "id": "nav5",
+      "content": "đã chặn",
+      "active": false,
+      "type": "block"
+    },
+    {
+      "id": "nav6",
+      "content": "thêm bạn",
+      "active": false,
+      "type": "add"
+    }
+  ],
+  "contacts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "contactId": 2,
+      "status": false,
+      "block": false
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "contactId": 1,
+      "status": false,
+      "block": false
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "contactId": 4,
+      "status": true,
+      "block": false
+    },
+    {
+      "id": 4,
+      "userId": 5,
+      "contactId": 1,
+      "status": true,
+      "block": true
+    },
+    {
+      "id": 5,
+      "userId": 6,
+      "contactId": 1,
+      "status": true,
+      "block": false
+    },
+    {
+      "id": 6,
+      "userId": 2,
+      "contactId": 3,
+      "status": true,
+      "block": false
     }
   ]
 }

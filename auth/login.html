@@ -19,18 +19,18 @@
         </div>
 
         <div class="overlay-full">
-            <form class="form form-login py-2">
+            <form class="form form-login py-2" action="/home.html" method="POST">
                 <div class="grid">
                     <div class="login_account">
                         <div class="heading">
                             <h3>Chào mừng trở lại!</h3>
-                            <!-- <span class="d-block">Rất vui mừng khi được gặp lại
-                                bạn!</span> -->
+                            <span class="d-block">Rất vui mừng khi được gặp lại
+                                bạn!</span>
                         </div>
-                        <div class="alert alert-success d-none">
+                        <!-- <div class="alert alert-success d-none">
                             <span>Chúc mừng bạn đã tạo tài khoản thành công</span>
                             <span>&times;</span>
-                        </div>
+                        </div> -->
                         <div class="form-group">
                             <label for="">Email hoặc Số điện
                                 thoại
@@ -153,16 +153,15 @@
                 Validator.isRequired('.form-login input[name="password"]', '- Ô này là bắt buộc'),
             ],
             onSubmit: async (data) => {
-                const rawResponse = await fetch('http://localhost:3000/user', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(data)
-                })
-                const user = await rawResponse.json()
-                console.log(user)
-                console.log("data", data)
+                // const rawResponse = await fetch('http://localhost:3000/users', {
+                //     method: 'POST',
+                //     headers: {
+                //         'Content-Type': 'application/json'
+                //     },
+                //     body: JSON.stringify(data)
+                // })
+                // const user = await rawResponse.json()
+                console.log(data)
             }
         })
 
