@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&display=swap");
 .d-block {
-  display: block; }
+  display: block !important; }
 
 .d-grid {
   display: grid; }
@@ -218,6 +218,9 @@
   background-color: #2f3136; }
   .bg-dark-input {
     background-color: rgba(54, 57, 63, 0.6); }
+
+.bg-danger {
+  background-color: rgba(196, 67, 67, 0.8) !important; }
 
 .m-0 {
   margin: 0px !important; }
@@ -680,6 +683,25 @@
   background-color: rgba(196, 67, 67, 0.8);
   color: white !important; }
 
+.disabled {
+  background-color: #5f6464 !important;
+  pointer-events: none; }
+
+@media (max-width: 1200px) {
+  .hide-on-sm-md-lg {
+    display: none !important; } }
+
+@media (max-width: 930px) {
+  .hide-btn-1 {
+    display: none !important; } }
+
+@media (max-width: 830px) {
+  .hide-btn-2 {
+    display: none !important; } }
+
+.text-capitalize {
+  text-transform: capitalize !important; }
+
 * {
   box-sizing: border-box; }
 
@@ -824,6 +846,27 @@ main {
     width: 100%;
     height: 100%; }
 
+#search-contact {
+  max-width: 90%;
+  margin: 0 auto; }
+  #search-contact input {
+    color: white;
+    background: #10121554; }
+  #search-contact .search-icon {
+    font-size: 0.8rem;
+    color: white;
+    padding: 4px 6px;
+    margin-right: 10px; }
+
+.add-contact-box .title {
+  display: none; }
+
+.add-contact-box button {
+  display: block !important; }
+
+.add-contact-box .contact-null {
+  display: none; }
+
 nav .active .title {
   color: #fff; }
 
@@ -838,6 +881,17 @@ nav .active .title {
 
 .actionButton {
   position: relative; }
+  .actionButton .actionButton-icon {
+    display: inline-block; }
+    .actionButton .actionButton-icon.bg-i i {
+      background: #2b1e1e; }
+      .actionButton .actionButton-icon.bg-i i:hover {
+        color: #c44343; }
+    .actionButton .actionButton-icon i {
+      border-radius: 50%;
+      padding: 6px 5px; }
+      .actionButton .actionButton-icon i:hover {
+        color: #bfafeb; }
   .actionButton .info {
     position: absolute;
     top: -36px;
@@ -1070,8 +1124,8 @@ nav .active .title {
       padding: 0;
       margin: 0; }
     .modal-title .main {
-      font-weight: 600;
-      font-size: 1.5rem;
+      font-weight: 700;
+      font-size: 1.2rem;
       text-transform: uppercase;
       line-height: 1.875rem;
       padding: 4px 0; }
@@ -1235,5 +1289,41 @@ nav .active .title {
 .chat-box {
   width: 100%;
   height: calc(100vh - 78px);
-  position: relative;
-  background-color: yellow; }
+  position: relative; }
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 20px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cacaca;
+  border-radius: 10px;
+  max-height: 50%;
+  height: 50%; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888888; }
+
+::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 6px; }
+
+::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 6px; }
+
+.invalid .form-message {
+  color: #fa6868;
+  font-size: 0.8rem; }
+
+.invalid .form-control, .invalid .form-control-sm,
+.invalid .upload-avatar-img {
+  border-color: #fa6868; }
